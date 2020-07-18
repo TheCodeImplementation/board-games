@@ -1,0 +1,88 @@
+/*
+ * Created by The Code Implementation, July 2020.
+ * Youtube channel: https://www.youtube.com/channel/UCecfXH0CwYv-CA0Oo3-8PFg
+ * Github: https://github.com/TheCodeImplementation
+ */
+
+.boardArea{
+    -fx-background-color: #777;
+
+}
+.board{
+    -fx-alignment: center;
+
+}
+.square {
+    -fx-alignment: center;
+    -fx-font-size: 36;
+    -fx-padding: 0;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    /*background images*/
+    -fx-background-size: 40px;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+.lightSquare {
+    -fx-background-color: white;
+
+}
+.darkSquare {
+    -fx-background-color: lightblue;
+
+}
+.emptySquare {
+    -fx-background-color: black;
+
+}
+.greenFocusHighlight:focused {
+    -fx-border-width: 2;
+    -fx-border-color: limegreen;
+}
+.darkBorder{
+    -fx-border-color: black;
+
+}
+.gameControls{
+    -fx-alignment: center;
+    -fx-font-size: 18;
+}
+.popUpMessage{
+    -fx-background-color: white;
+    -fx-font-size: 30;
+    -fx-padding: 10;
+}
+.popUpChoice{
+    -fx-background-color: white;
+    -fx-font-size: 30;
+    -fx-padding: 10;
+}
+.popUpChoice:pressed{
+    -fx-background-color: gray;
+
+}
+.popUpChoice:hover{
+    -fx-background-color: lightgray;
+
+}
+.checkerboard{
+    -fx-alignment: center;
+
+}
+.lightPlayerButton{
+    -fx-border-color: black;
+    -fx-background-color: white;
+}
+.darkPlayerButton{
+    -fx-border-color: black;
+    -fx-background-color: #505050;
+    -fx-text-fill: white;
+}
+.highlightedSquare{
+    -fx-background-color: palegreen;
+
+}
+.knightsTourHighlight{
+    -fx-background-color: red;
+    -fx-border-color: black;
+}

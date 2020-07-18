@@ -1,0 +1,22 @@
+/*
+ * Created by The Code Implementation, July 2020.
+ * Youtube channel: https://www.youtube.com/channel/UCecfXH0CwYv-CA0Oo3-8PFg
+ * Github: https://github.com/TheCodeImplementation
+ */
+
+ .darkMan{
+    -fx-background-image: url('/gui/resources/checkers/dark_man.png');
+
+}
+.darkKing{
+    -fx-background-image: url('/gui/resources/checkers/dark_king.png');
+
+}
+.lightMan{
+    -fx-background-image: url('/gui/resources/checkers/light_man.png');
+
+}
+.lightKing{
+    -fx-background-image: url('/gui/resources/checkers/light_king.png');
+
+}

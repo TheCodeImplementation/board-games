@@ -1,0 +1,32 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<VBox stylesheets="@myStyle.css" fx:controller="gui.Controller" xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <HBox styleClass="gameControls">
+        <MenuButton text="Games" >
+            <items>
+                <MenuItem  onAction="#menuChessClicked"         text="Chess"/>
+                <MenuItem  onAction="#menuCheckersClicked"      text="Checkers"/>
+                <MenuItem  onAction="#menuHordeClicked"         text="Horde"/>
+                <MenuItem  onAction="#menuKnightsTourClicked"   text="Knight's Tour"/>
+            </items>
+        </MenuButton>
+        <Button  fx:id="btnUndoAll"     onAction="#btnUndoAllClicked"  text="⮨"/>
+        <Button  fx:id="btnUndo"        onAction="#btnUndoClicked"     text="⤶"/>
+        <Button  fx:id="btnRedoAll"     onAction="#btnRedoClicked"     text="⤷"/>
+        <Button  fx:id="btnRedo"        onAction="#btnRedoAllClicked"  text="⮩"/>
+        <Button  fx:id="btnNewGame"     onAction="#btnNewGameClicked"  text="+"/>
+        <Button  fx:id="btnAIMove"      onAction="#makeAIMove"         text="❓"/>
+        <Button                         onAction="#btnRotateClicked"   text="🔄"/> <!--🗘-->
+        <Region                         HBox.hgrow="ALWAYS"/>
+        <Button fx:id="btnLightPlayer"  onAction="#togglePlayerAI" onMousePressed="#chooseAIBot" styleClass="lightPlayerButton"/>
+        <Button fx:id="btnDarkPlayer"   onAction="#togglePlayerAI" onMousePressed="#chooseAIBot" styleClass="darkPlayerButton"/>
+    </HBox>
+    <StackPane  fx:id="boardHolder"   prefHeight="500" prefWidth="500" styleClass="boardArea"/>
+    <Label      fx:id="lblFooter"     text="Made by The Code Implementation"/>
+</VBox>
